@@ -4,7 +4,9 @@
 ## Theory
 ### Cross-entropy Method (CEM)
 
-Cross-entropy Method (CEM) is a Monte Carlo method for **importance sampling and optimization**. It's gradient free but model-based (as we are using a policy?)
+Cross-entropy Method (CEM) is a Monte Carlo method for **importance sampling and optimization**. It's gradient free but model-based (as we are using a policy?). We just learned a **tabular CEM**. It's an **evolutionary** algorithm and works extremely well.
+
+https://www.youtube.com/watch?v=aUrX-rP_ss4&list=PLCTc_C7itk-GaAMxmlChrkPnGKtjz8hv1
 
 1. Initialize a policy
 
