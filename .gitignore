@@ -8,6 +8,8 @@ node_modules
 *.swp
 
 
+# the book
+# book/
 
 env.sh
 # Byte-compiled / optimized / DLL files
