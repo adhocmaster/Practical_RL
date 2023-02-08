@@ -27,3 +27,7 @@ Then we traing the policy 100 times with:
 5. plt.vlines can be used to show vertical lines
 6. np.isfinite(new_policy).all() to check NaN or +-inf
 7. IPython.display.clear_output can be used to update figures inside notebook
+
+### CEM with scikit-learn deep learning (NOT finished yet)
+1. MLPClassifier has a partial_fit method which retains weights. fit method reinitializes weights
+2. We can record gym rendered videos with gym.wrappers.Monitor.
