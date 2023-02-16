@@ -31,3 +31,10 @@ Then we traing the policy 100 times with:
 ### CEM with scikit-learn deep learning (NOT finished yet)
 1. MLPClassifier has a partial_fit method which retains weights. fit method reinitializes weights
 2. We can record gym rendered videos with gym.wrappers.Monitor.
+
+### Gym
+Some environments have 200 tick limit. We can remove the time limit wrapper by using gym.make('envName').env (the base environment does not have any time limit)
+
+### Faster Training with Joblib
+
+We can parallelize espisode creationg using joblib! [More here](https://www.coiled.io/blog/sklearn-joblib-dask)
