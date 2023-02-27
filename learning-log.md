@@ -1,4 +1,4 @@
-# Week 0
+# Week 1
 
 02/04/2023
 ## Theory
@@ -27,6 +27,7 @@ Then we traing the policy 100 times with:
 5. plt.vlines can be used to show vertical lines
 6. np.isfinite(new_policy).all() to check NaN or +-inf
 7. IPython.display.clear_output can be used to update figures inside notebook
+8. np.isclose is a handy tool to write quick unit tests
 
 ### CEM with scikit-learn deep learning (NOT finished yet)
 1. MLPClassifier has a partial_fit method which retains weights. fit method reinitializes weights
@@ -38,3 +39,21 @@ Some environments have 200 tick limit. We can remove the time limit wrapper by u
 ### Faster Training with Joblib
 
 We can parallelize espisode creationg using joblib! [More here](https://www.coiled.io/blog/sklearn-joblib-dask)
+
+
+# Week 2
+
+## Theory
+
+### Difference between value iteration, policy iteration, and generalized policy iteration.
+
+### Contraction Mapping:
+
+Explanation of the notation is [here](https://www.youtube.com/watch?v=_DynXugXksU). The infinity norm just states the maximum value of a state in different value functions.
+
+1. ||TV||inf = maximum value over states. 
+2. ||TV - TU||inf = difference of maximum values over states of two different value functions. (the states can be different)
+3. ||V - U||inf = maximum difference of the value functions calculated over same states, i.e. f(sNot) = V(sNot) - U(sNot). 
+
+So, the contraction property says that the difference between maximum state values of two differnt policies are smaller than maximum difference policy of the policy (because why?). 
+
